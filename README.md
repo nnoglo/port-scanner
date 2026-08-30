@@ -1,5 +1,5 @@
 # Port Scanner
-A Port Scanner built with Python and PyQt5. Enter a target IP/hostname to get information on the ports that are open.<img width="494" height="625" alt="Screenshot 2026-08-30 at 1 24 42 AM" src="https://github.com/user-attachments/assets/612c898e-44c4-4919-8c99-c55b9c1bffa9" />
+A Port Scanner built with Python and PyQt5. Enter a target IP/hostname to get information on the ports that are open. <img width="494" height="625" alt="Screenshot 2026-08-30 at 1 24 42 AM" src="https://github.com/user-attachments/assets/612c898e-44c4-4919-8c99-c55b9c1bffa9" />
 ## Features
 - Multithreaded scanning (up to 100 concurrent ports) using `ThreadPoolExecutor`
 - Simple PyQt5 GUI: Enter a target IP/hostname and scan.
