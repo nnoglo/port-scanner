@@ -9,11 +9,12 @@ A Port Scanner built with Python and PyQt5. Enter a target IP/hostname to get in
 - Scans all ports (1-65535) and lists which are open in real time.
 - Handles invalid/unresolvable hostnames.
 ## Tech Stack
-- Python 3: Core language
-- **`socket`**: Low level TCP connections used to test whether each port is open
+- Python 3: Core language.
+- **`socket`**: Low level TCP connections used to test whether each port is open.
 - **`concurrent.futures.ThreadPoolExecutor`**: Runs up to 100 port-scan tasks simultaneously instead of sequentially.
-- **`PyQt5`**: GUI framework: `QThread` and `pyqtSignal` used to run scans off the main thread so the interface stays responsive
-- **`datetime`**: Timestamps scan start/finish times
+- **`PyQt5`**: GUI framework.
+- **`QThread`** and **`pyqtSignal`**: Run scans off the main thread so the interface stays responsive.
+- **`datetime`**: Timestamps scan start/finish times.
 
 ## How it Changed Overtime
 This started as a simple sequential CLI scanner (one part checked at a time), then it went through two major upgrades:
@@ -23,7 +24,7 @@ This started as a simple sequential CLI scanner (one part checked at a time), th
 ## Setup
 1. Clone the repository:
 ```
-git clone https://github.com/nnoglo/port-scanner
+git clone https://github.com/nnoglo/port-scanner.git
 cd port-scanner
 ```
 2. Install dependencies:
