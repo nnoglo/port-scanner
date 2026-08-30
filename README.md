@@ -16,7 +16,7 @@ A Port Scanner built with Python and PyQt5. Enter a target IP/hostname to get in
 - **`QThread`** and **`pyqtSignal`**: Run scans off the main thread so the interface stays responsive.
 - **`datetime`**: Timestamps scan start/finish times.
 
-## How it Changed Overtime
+## How it Evolved
 This started as a simple sequential CLI scanner (one part checked at a time), then it went through two major upgrades:
 1. **Multithreading**: Replaced the single-threaded loop with a `ThreadPoolExecutor` pool of 100 worker threads, so ports are checked simultaneously instead of one at a time. Significantly increased the scan time.
 2. **GUI Integration**: Wrapped the scanning logic in a `QThread` subclass so it runs off the main UI thread. Results stream back to the interface live via Qt signals (`pyqtSignal`) as each open port is found.
